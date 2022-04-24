@@ -8,7 +8,7 @@ function ArrowShowTears(CurrentStatus, memory) {
     // 1番大事なことを取得
     var mostPrecious = GetMostPrecious(CurrentStatus)
     // 忘れなければ
-    if(memory.includes()){
+    if(memory.includes(mostPrecious)){
       // 涙を見せることを許可
       return true
     } 
