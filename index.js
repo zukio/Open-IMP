@@ -2,13 +2,13 @@
 const preciousArr = ["負けない", "投げ出さない", "逃げ出さない", "信じ抜く"]
 
 // 涙を見せていいか否か
-function ArrowShowTears(CurrentStatus, memory) {
+function ArrowShowTears(CurrentStatus, tempMemory) {
   // 現在のステータス
   if(CurrentStatus == "ダメになりそう"){
     // 1番大事なことを取得
     var mostPrecious = GetMostPrecious()
     // 忘れなければ
-    if(memory.includes(mostPrecious)){
+    if(tempMemory.includes(mostPrecious)){
       // 涙を見せることを許可
       return true
     } 
