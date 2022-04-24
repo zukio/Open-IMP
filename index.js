@@ -6,7 +6,7 @@ function ArrowShowTears(CurrentStatus, memory) {
   // 現在のステータス
   if(CurrentStatus == "ダメになりそう"){
     // 1番大事なことを取得
-    var mostPrecious = GetMostPrecious(CurrentStatus)
+    var mostPrecious = GetMostPrecious()
     // 忘れなければ
     if(memory.includes(mostPrecious)){
       // 涙を見せることを許可
@@ -17,7 +17,7 @@ function ArrowShowTears(CurrentStatus, memory) {
 }
 
 //TODO:1番大事なことを取得
-function GetMostPrecious(CurrentStatus){
+function GetMostPrecious(){
   // １つに絞る方法が見いだせずランダム処理しています
   return preciousArr[Math.floor(Math.random() * preciousArr.length)];
 } 
